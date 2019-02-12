@@ -10,12 +10,15 @@ class App extends Component {
       character: "",
       isLoaded: false
     }
+    this.fetchData = this.fetchData.bind(this);
+
     }
 
   componentDidMount() {
     this.fetchData();
     }
-    fetchData = () => {
+
+  fetchData = () => {
       fetch('https://got-quotes.herokuapp.com/quotes')
         .then(result => result.json())
         .then(data => {
@@ -25,7 +28,7 @@ class App extends Component {
             isLoaded: true
           })
         }
-        )
+      )
     }
 
 
@@ -37,12 +40,16 @@ class App extends Component {
               <p className="mb-0">{this.state.quote}</p>
               <footer className="blockquote-footer">{this.state.character}</footer>
             </blockquote>
-            <button type="button" className="btn btn-primary btn-lg" onClick={this.fetchData}>New Quote</button>
+            <div id="buttons">
+            <a id="tweet-quote" href={'https://twitter.com/intent/tweet?text='+'"'+this.state.quote+'"   '+this.state.character}
+            target="_blank"><i className="fab fa-twitter fa-2x"></i></a>
+            <button id="new-quote" type="button" onClick={this.fetchData}>New Quote</button>
+            </div>
           </div>
       </div>
     ) : (
       <div className="App">
-      
+        <div className="loader"></div>
       </div>
     )
   }

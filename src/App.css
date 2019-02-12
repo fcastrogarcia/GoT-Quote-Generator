@@ -10,40 +10,71 @@
   align-items: center;
   height: 100vh;
   justify-content: center;
+  background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+  font-family: 'Nunito', sans-serif;
 }
 
 blockquote {
   font-size: 2.5rem;
+  margin: 0.8em 0.8em 0.8em 0;
+  opacity: 0.8;
 }
 
-@include media-breakpoint-up(sm) {
-  blockquote {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  blockquote {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  blockquote {
-    font-size: 1.6rem;
-  }
-}
 
 #quote-container {
   display: flex;
   height: auto;
-  width: 70%;
+  max-width: 60vw;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 5px 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
 }
-#quote-container button {
-  margin: 1.7em;
-  text-decoration: none;
-  border: none;
+#new-quote {
+    border: 1px solid transparent;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    margin: 1em;
+    color: rgba(255, 255, 255, .7);
+    font-weight: 700;
+    background: rgba(10, 20, 30, .1);
+    font-size: 2rem;
+    outline: none;
+}
+#new-quote:hover {
+    background: rgba(10, 20, 30, .3);
+}
+#new-quote:active {
+  transform: scale(0.99);
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  background-color: ;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #EDECF0;
+}
+#tweet-quote {
+  margin: 1.4em;
+  padding-left: 0.6em ;
+  outline: none;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
