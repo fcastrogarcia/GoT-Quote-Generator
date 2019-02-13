@@ -66,8 +66,8 @@ blockquote {
 }
 
 .loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -77,4 +77,16 @@ blockquote {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 768px) {
+  #quote-container {
+  min-width: 95vw;
+}
+blockquote {
+  font-size: 1.5rem;
+}
+#new-quote {
+  font-size: 1.5rem;
+}
 }
