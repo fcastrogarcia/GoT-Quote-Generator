@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/GoT-Quote-Generator/static/js/runtime~main.e4ea59b2.js"
   },
   {
-    "revision": "a0f332e3f897282a07e5",
-    "url": "/GoT-Quote-Generator/static/js/main.a0f332e3.chunk.js"
+    "revision": "68a97c10a55262368d94",
+    "url": "/GoT-Quote-Generator/static/js/main.68a97c10.chunk.js"
   },
   {
     "revision": "f715b2e0bea123466b14",
     "url": "/GoT-Quote-Generator/static/js/1.f715b2e0.chunk.js"
   },
   {
-    "revision": "a0f332e3f897282a07e5",
-    "url": "/GoT-Quote-Generator/static/css/main.2badc5d4.chunk.css"
+    "revision": "68a97c10a55262368d94",
+    "url": "/GoT-Quote-Generator/static/css/main.7248deea.chunk.css"
   },
   {
-    "revision": "cf9c720b47a81c5ee63d2b184f4b5771",
+    "revision": "742404ff76d2c0bd917c224766e35d67",
     "url": "/GoT-Quote-Generator/index.html"
   }
 ];
