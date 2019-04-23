@@ -41,7 +41,7 @@ class App extends Component {
               <footer className="blockquote-footer">{this.state.character}</footer>
             </blockquote>
             <div id="buttons">
-            <a id="tweet-quote" href={'https://twitter.com/intent/tweet?text='+'"'+this.state.quote+'"   '+this.state.character}
+            <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text="${this.state.quote}"   ${this.state.character}`}
             target="_blank"><i className="fab fa-twitter fa-2x"></i></a>
             <button id="new-quote" type="button" onClick={this.fetchData}>New Quote</button>
             </div>
