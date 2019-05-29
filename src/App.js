@@ -41,10 +41,9 @@ class App extends Component {
           <div id="buttons">
             <a
               id="tweet-quote"
-              href={`https://twitter.com/intent/tweet?text="${
-                this.state.quote
-              }"   ${character}`}
+              href={`https://twitter.com/intent/tweet?text="${quote}"${character}`}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-twitter fa-2x" />
             </a>
